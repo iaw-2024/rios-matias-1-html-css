@@ -117,12 +117,12 @@ nav ul a:hover{
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.book-card h2 {
+.book-card .card-title {
   font-weight: 300;
   margin-top: 0;
 }
 
-.book-card p {
+.book-card .card-text{
   margin-bottom: 5px;
   font-weight: 500;
 }
