@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Reviews</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-200 ">
+    <nav class="flex items-center justify-between bg-purple-500 px-4 py-2">
+        <a href="home" class="text-white text-lg font-semibold" id="logo">BookReviews</a>
+        <input type="checkbox" id="hamburguer" class="hidden"> 
+        <label for="hamburguer" class="md:hidden">
+            <i class="fas fa-bars text-white text-xl"></i>
+        </label>
+    
+        <ul class="hidden md:flex gap-8">
+            <li>
+                <a href="/listado/html_css/index.html" class="text-white hover:border-b-2 hover:border-white">Listado</a>
+            </li>
+            <li>
+                <a href="/formulario/html_css/formulario.html" class="text-white hover:border-b-2 hover:border-white">Agregar</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="list-container">
+        <h1 class="text-center uppercase font-light text-3xl mb-4">Lista de Reviews de Libros</h1>
+        <ul>
+            <li class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md my-8 hover:shadow-lg hover:bg-gray-100">
+                <h2 class="text-xl font-medium">Título: Harry Potter y la Piedra Filosofal</h2>
+                <p class="font-semibold">Autor: J.K. Rowling</p>
+                <p class="font-semibold">Puntaje: 5/5</p>
+                <p class="font-semibold">Cantidad de Reviews: 100</p>
+                <p class="font-semibold">Comentario: ¡Un libro fantástico que cautiva desde la primera página!</p>
+            </li>
+            <li class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md my-8 hover:shadow-lg hover:bg-gray-200">
+                <h2 class="text-xl font-medium">Título: El Señor de los Anillos</h2>
+                <p class="font-semibold">Autor: J.R.R. Tolkien</p>
+                <p class="font-semibold">Puntaje: 4.5/5</p>
+                <p class="font-semibold">Cantidad de Reviews: 80</p>
+                <p class="font-semibold">Comentario: Una obra maestra de la literatura fantástica.</p>
+            </li>
+            <li class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md my-8 hover:shadow-lg hover:bg-gray-200">
+                <h2 class="text-xl font-medium">Título: Cien años de soledad</h2>
+                <p class="font-semibold">Autor: Gabriel García Márquez</p>
+                <p class="font-semibold">Puntaje: 4/5</p>
+                <p class="font-semibold">Cantidad de Reviews: 120</p>
+                <p class="font-semibold">Comentario: Una historia fascinante que te sumerge en un mundo mágico y real a la vez.</p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
