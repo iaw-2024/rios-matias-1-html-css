@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valoraciones</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-200 ">
+    <nav class="flex items-center justify-between bg-purple-500 px-4 py-2">
+        <a href="home" class="text-white text-lg font-semibold" id="logo">BookReviews</a>
+        <input type="checkbox" id="hamburguer" class="hidden"> 
+        <label for="hamburguer" class="md:hidden">
+            <i class="fas fa-bars text-white text-xl"></i>
+        </label>
+    
+        <ul class="hidden md:flex gap-8">
+            <li>
+                <a href="/rios-matias-1-html-css/listado/html_css/index.html" class="text-white hover:border-b-2 hover:border-white">Listado</a>
+            </li>
+            <li>
+                <a href="/rios-matias-1-html-css/formulario/html_css/formulario.html" class="text-white hover:border-b-2 hover:border-white">Agregar</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md my-8">
+        <h1 class="text-center text-2xl font-bold ">Nueva valoración</h1>
+        <form action="#" method="POST">
+            <div class="mb-4">
+                <label for="nombre" class="block font-bold mb-1">Nombre del libro:</label>
+                <input type="text" id="nombre" name="nombre" required class="w-full py-2 px-3 border border-gray-300 rounded-md focus:outline-none focus:border-blue-400">
+            </div>
+
+            <div class="mb-4">
+                <label for="autor" class="block font-bold mb-1">Nombre del autor:</label>
+                <input type="text" id="author" name="author" required class="w-full py-2 px-3 border border-gray-300 rounded-md focus:outline-none focus:border-blue-400">
+            </div>
+
+            <div class="mb-4">
+                <label for="edicion" class="block font-bold mb-1">Edicion:</label>
+                <input type="text" id="edition" name="edicion" required class="w-full py-2 px-3 border border-gray-300 rounded-md focus:outline-none focus:border-blue-400">
+            </div>
+
+            <div class="mb-4 font-bold">
+                <label class="block mb-1">Puntuación:</label>
+                <div>
+                    <input type="radio" id="rate-1" name="rate" value="1" required class="mr-2">
+                    <label for="rate-1">1</label>
+                    <input type="radio" id="rate-2" name="rate" value="2" class="mr-2">
+                    <label for="rate-2">2</label>
+                    <input type="radio" id="rate-3" name="rate" value="3" class="mr-2">
+                    <label for="rate-3">3</label>
+                    <input type="radio" id="rate-4" name="rate" value="4" class="mr-2">
+                    <label for="rate-4">4</label>
+                    <input type="radio" id="rate-5" name="rate" value="5" class="mr-2">
+                    <label for="rate-5">5</label>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <label for="comment" class="block font-bold mb-1">Comentario:</label>
+                <textarea id="comentario" name="comment" rows="4" cols="50" class="w-full py-2 px-3 border border-gray-300 rounded-md focus:outline-none focus:border-blue-400" required></textarea>
+            </div>
+
+            <div>
+                <input type="submit" value="Enviar" class="bg-blue-500 text-white py-2 px-4 rounded-md cursor-pointer hover:bg-blue-600">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
